@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AplicacionCetes</string>
+    <string name="ganancia">ganancia</string>
+    <string name="interes">interes</string>
+    <string name="Interes">Interes</string>
+    <string name="Gananciaobtenida">GananciaObtenida</string>
+    <string name="GananciaMes">Ganancia del Mes</string>
+    <string name="digite_el_monto_a_invertir">Digite el monto a invertir...</string>
+</resources>

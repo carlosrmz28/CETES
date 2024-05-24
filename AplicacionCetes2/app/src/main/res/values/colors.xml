@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="cambio">#FF000000</color>
+    <color name="fon">#F3DFDF</color>
+    <color name="nu">#E89191</color>
+    <color name="arr">#D1B0B0</color>
+</resources>

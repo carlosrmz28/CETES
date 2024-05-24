@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#992626"
+    app:cardBackgroundColor="#AE3030">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:textColor="@color/cambio"
+            android:id="@+id/tvMes"
+            android:layout_width="108dp"
+            android:layout_height="83dp"
+            android:background="@color/nu"
+            android:textAlignment="center"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            tools:text="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/fon"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/cambio"
+                android:id="@+id/tvMonto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/arr"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                tools:text="$100" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="265dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/fon">
+
+                <TextView
+                    android:id="@+id/tvGanancia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="@string/GananciaMes"
+                    android:textColor="@color/cambio"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.523" />
+
+                <TextView
+                    android:id="@+id/tvGananciaMonto"
+                    android:layout_width="61dp"
+                    android:layout_height="19dp"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="@color/cambio"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/tvGanancia"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="$11" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:text="@string/Interes"
+                    android:textColor="@color/cambio"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/tvInteresMonto"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.523" />
+
+                <TextView
+                    android:id="@+id/tvInteresMonto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/cambio"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="11%" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
